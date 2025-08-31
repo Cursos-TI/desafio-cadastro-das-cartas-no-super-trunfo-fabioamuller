@@ -3,12 +3,12 @@
 int main (){
 
     // Variáveis para a carta 1
-    char estado1[3], cod_carta1[4], cidade1[50];
+    char estado1, cod_carta1[4], cidade1[50];
     float area1, pib1;
     int populacao1, turismo1;
 
     // Variáveis para a carta 2
-    char estado2[3], cod_carta2[4], cidade2[50];
+    char estado2, cod_carta2[4], cidade2[50];
     float area2, pib2;
     int populacao2, turismo2;
 
@@ -17,7 +17,7 @@ int main (){
     printf("|      Carta 1      |\n");
     printf("+-------------------+\n");
     printf("Digite o Estado (ex: SP): \n");
-    scanf("%2s", estado1);
+    scanf("%c", estado1);
     printf("Digite o codigo da carta (uma letra e dois numeros, ex: A01): \n");
     scanf("%3s", cod_carta1);
     printf("Digite o nome da cidade: \n");
@@ -35,8 +35,8 @@ int main (){
     printf("+-------------------+\n");
     printf("|      Carta 2      |\n");
     printf("+-------------------+\n");
-    printf("Digite o Estado (ex: SP): \n");
-    scanf("%2s", estado2);
+    printf("Digite o Estado (ex: A-H): \n");
+    scanf("%c", estado2);
     printf("Digite o codigo da carta (uma letra e dois numeros, ex: A01): \n");
     scanf("%3s", cod_carta2);
     printf("Digite o nome da cidade: \n");
